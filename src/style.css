@@ -21,6 +21,11 @@ body {
   font-weight: bold;
 }
 
+.logo {
+  height: 40px;
+  width: auto;
+}
+
 #navbar {
   display: flex;
   background-color: rgba(0, 0, 0, 0.6);
@@ -36,11 +41,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-#navbar .navbar-container .logo {
-  height: 40px;
-  width: auto;
+  padding: 20px 0;
 }
 
 #navbar .navbar-container ul {
@@ -51,9 +52,14 @@ body {
 
 #navbar .navbar-container ul li {
   padding: 0 20px;
+  transition: all 300ms ease;
 }
 
-/* :nth-child() estiliza o filho da sua escolha */
+#navbar .navbar-container ul li:hover {
+  color: #1db954;
+  cursor: pointer;
+}
+
 #navbar .navbar-container ul li:nth-child(3) {
   border-right: 1px solid white;
 }
